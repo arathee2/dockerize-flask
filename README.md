@@ -1,9 +1,10 @@
 # dockerize-tic-tac-toe
-An implementation of Tic-tac-toe in Python containerized using Docker.
+An implementation of Tic-tac-toe in Python containerized using Docker. To play the game, install [Docker](https://docs.docker.com/get-docker/) and run the following command:
+`docker run -it arathee2/tic-tac-toe python3 ttt.py`
 
-# Steps to Dockerize a simple Flask app
+# Steps to Dockerize a simple Python script.
 ```bash
-# 1. Create files for project scaffolding
+# 1. Create your project along with Dockerfile and Makefile. For this game I created the following files.
 touch requirements.txt
 touch Makefile
 touch Dockerfile
@@ -12,10 +13,10 @@ touch ttt.py
 # 2. Build Docker image
 docker build --tag=tic-tac-toe .
 
-# 3. Look at local Docker images
+# 3. Ensure that image is built by looking at all local Docker images
 docker image ls
 
-# 4. Run Flask app using local image
+# 4. Run ttt.py app using local image
 docker run -it tic-tac-toe python3 ttt.py
 
 # 5. Push image to DockerHub
@@ -27,6 +28,6 @@ docker image push $dockerpath                      # push image
 # 6. Pull image
 docker pull arathee2/tic-tac-toe
 
-# 7. Run Flask app using remote DockerHub image
+# 7. Run ttt.py using remote DockerHub image
 docker run -it arathee2/tic-tac-toe python3 ttt.py
 ```
