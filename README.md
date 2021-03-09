@@ -1,10 +1,15 @@
-# dockerize-tic-tac-toe
-An implementation of Tic-tac-toe in Python containerized using Docker. To play the game, install [Docker](https://docs.docker.com/get-docker/) and run the following command:
+# Tic-tac-toe
+
+A text-based implementation of Tic-tac-toe that can be played in command line. To play the game, install [Docker](https://docs.docker.com/get-docker/) and run the following command:
+
 `docker run -it arathee2/tic-tac-toe python3 ttt.py`
 
-# Steps to Dockerize a simple Python script.
+# How to Dockerize a simple Python project.
+
+Here is how I Dockerized this project.
+
 ```bash
-# 1. Create your project along with Dockerfile and Makefile. For this game I created the following files.
+# 1. Create your project along with Dockerfile and Makefile. For this project I created the following files.
 touch requirements.txt
 touch Makefile
 touch Dockerfile
