@@ -14,13 +14,13 @@ class ttt:
         self.player = self.players[0]                             # Initialize Player to be O
         
     def play(self):                                               # Method to play the game: Function inside a class
-        welcome_message = ("Hello! This is tic-tac-toe, a two player game"
-                            "played between player 0 and player X."
-                            "The game is played in a 3 x 3 matrix. Each cell of the matrix has an index from 1-9."
-                            "Row one has cells 1, 2 and 3."
-                            "Row one has cells 4, 5 and 6."
-                            "Row one has cells 7, 8 and 9."
-                            "The game starts with player 0 selecting an index followed by player X, followed by player 0 and so on."
+        welcome_message = ("Hello! This is tic-tac-toe, a two player game "
+                            "played between player 0 and player X. "
+                            "The game is played in a 3 x 3 matrix. Each cell of the matrix has an index from 1-9. "
+                            "Row one has cells 1, 2 and 3. "
+                            "Row one has cells 4, 5 and 6. "
+                            "Row one has cells 7, 8 and 9. "
+                            "The game starts with player 0 selecting an index followed by player X, followed by player 0 and so on. "
                             "The game stops when one of the two players win or when the game is a draw.")
         print(welcome_message)
         self.print_board()

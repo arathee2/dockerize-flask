@@ -6,7 +6,7 @@ A text-based implementation of Tic-tac-toe that can be played in command line. T
 
 # How to Dockerize a simple Python project.
 
-Here is how I Dockerized this project.
+Here is how I [Dockerized](https://hub.docker.com/repository/docker/arathee2/tic-tac-toe) this project.
 
 ```bash
 # 1. Create your project along with Dockerfile and Makefile. For this project I created the following files.
