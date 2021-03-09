@@ -1,4 +1,4 @@
-dockerpath="arathee2/flask-hello-world"
+dockerpath="arathee2/tic-tac-toe"
 
 # tag image
 docker image tag app $dockerpath
